@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Test ansible
+      shell: "echo 1 > /var/log/ansible_teste.log"
+      delay: 5
+      retries: 12
+      
+    
+
